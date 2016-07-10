@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/featurebubble_bg"
+    android:clickable="true"
+    android:minWidth="100dp">
+
+    <TextView
+        android:id="@+id/Bubble_Feature_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="4dp"
+        android:text="Feature Type"
+        android:textColor="@color/blue_main"
+        android:textStyle="bold" />
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/Bubble_Picture"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/Bubble_FeatureCreator"
+        android:layout_below="@id/Bubble_Feature_Title"
+        android:layout_margin="2dp" />
+
+    <TextView
+        android:id="@+id/Bubble_FeatureCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bubble_Feature_Title"
+        android:layout_toRightOf="@+id/Bubble_Picture"
+        android:paddingLeft="2dp"
+        android:text="John Smith"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Bubble_FeatureAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bubble_FeatureCreator"
+        android:layout_toEndOf="@+id/Bubble_Picture"
+        android:layout_toRightOf="@+id/Bubble_Picture"
+        android:paddingLeft="2dp"
+        android:text="2 days ago"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/Bubble_FeatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bubble_Picture"
+        android:layout_margin="4dp"
+        android:paddingTop="8dp"
+        android:text="New Text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/FeatureBubble_Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bubble_FeatureText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/comments_button"
+        android:drawableLeft="@mipmap/gray_comments_bubble"
+        android:drawablePadding="6dp"
+        android:text="Comments"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/people_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity$HelpFragment"
+    >
+
+    <TextView
+        android:id="@+id/help_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Have feedback or a question? We'd love to hear from you! Drop us a line: info@wherewolf.wf and we'll get back to you ASAP!"/>
+
+</LinearLayout>

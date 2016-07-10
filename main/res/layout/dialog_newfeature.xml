@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/TopSection"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NewFeatureDialog_NewFeatureIcon1"
+            android:src="@drawable/alert"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="New Alert"
+            android:textSize="24sp"
+            android:id="@+id/NewFeatureDialog_Title"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NewFeatureDialog_NewFeatureIcon2"
+            android:src="@drawable/alert"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopSection"
+        android:id="@+id/MainSection"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DateStart"
+            android:clickable="true"
+            android:background="@android:drawable/btn_default">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date:"
+                android:id="@+id/textView3"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/NewFeature_DateStartText"
+                android:textAlignment="gravity"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine|textCapSentences"
+            android:ems="10"
+            android:hint="Type your new post right here!"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/NewFeatureDialog_FeatureText"
+            android:maxLines="6"
+            android:maxLength="1024"
+            android:minLines="4" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/comments_button"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:text="Post"
+        android:id="@+id/NewFeatureDialog_Post"
+        android:layout_below="@+id/MainSection"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

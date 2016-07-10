@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentsListView"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:footerDividersEnabled="false"
+        android:fastScrollEnabled="false"
+        android:fastScrollAlwaysVisible="false"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Loading Comments...jsd fklsd flnsdklf sdkl fgklsd gklnsdklgnskdl gklsd nfgklnsdklgnskdln gklsdn gklnsdklgnsdklgn klsdngklnsdklfnskdlnfklsdnfklnsdklnfklsdnfklnsdklfnklsdnfklsndklfn sdkln fklsd kfgl sdklg skld fgklsd fknsdklfn klsd fkln sdklfn klsd fklnsdklfn sdlk fklsd fklnsdklfnskld fkls dklfnklsdd"
+        android:id="@+id/FeatureComments_Comments"
+        android:layout_centerHorizontal="true"
+        android:minLines="3"
+        android:elegantTextHeight="false"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/CommentsListView"
+        android:visibility="gone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FeatureComments_NewCommentText"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minLines="4"
+        android:text=""
+        android:layout_below="@+id/FeatureComments_Comments" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/comments_button"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:text="Post Comment"
+        android:id="@+id/FeatureComments_PostComment"
+        android:layout_below="@+id/FeatureComments_NewCommentText"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

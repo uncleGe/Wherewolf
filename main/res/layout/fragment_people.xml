@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/people_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity$PeopleFragment"
+    >
+
+    <TextView
+        android:id="@+id/me_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="User's name, photo, number of friends, and number of posts"/>
+    <TextView
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="---------------------------------------------------------------------------------"/>
+    <TextView
+        android:id="@+id/friends_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="List user's of friends"/>
+
+</LinearLayout>
